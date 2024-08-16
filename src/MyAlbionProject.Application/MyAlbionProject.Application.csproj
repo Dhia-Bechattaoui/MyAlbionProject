@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>MyAlbionProject</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyAlbionProject.Domain\MyAlbionProject.Domain.csproj" />
+    <ProjectReference Include="..\MyAlbionProject.Application.Contracts\MyAlbionProject.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Account.Application" Version="8.2.1" />
+    <PackageReference Include="Volo.Abp.Identity.Application" Version="8.2.1" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="8.2.1" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="8.2.1" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="8.2.1" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Application" Version="8.2.1" />
+  </ItemGroup>
+
+</Project>
